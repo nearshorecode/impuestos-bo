@@ -7,7 +7,7 @@ const availableChars = [
   'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
   'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
   'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
-  'y', 'z', '+', '/'
+  'y', 'z', '+', '/',
 ]
 
 const BASE_64 = 64
@@ -20,8 +20,7 @@ const base64 = (amount) => {
 
   let encoded = ''
 
-  while (divisor > 0)
-  {
+  while (divisor > 0) {
     divisor = parseInt(safeAmount / BASE_64, 10)
     module = safeAmount % BASE_64
     encoded = availableChars[module] + encoded
@@ -32,5 +31,5 @@ const base64 = (amount) => {
 }
 
 module.exports = {
-  base64
+  base64,
 }
