@@ -1,3 +1,7 @@
+
+[![Build Status](https://travis-ci.org/nearshorecode/impuestos-bo.svg?branch=master)](https://travis-ci.org/nearshorecode/impuestos-bo)
+
+
 # Utility Library for Impuestos Bolivia
 
 ## Local Development
