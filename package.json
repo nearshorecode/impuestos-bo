@@ -1,0 +1,27 @@
+{
+  "name": "impuestos-bo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearshorecode/impuestos-bo.git"
+  },
+  "author": "Nearshore Code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nearshorecode/impuestos-bo/issues"
+  },
+  "homepage": "https://github.com/nearshorecode/impuestos-bo#readme",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.1.0"
+  }
+}
