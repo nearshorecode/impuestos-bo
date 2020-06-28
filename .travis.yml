@@ -6,9 +6,7 @@ cache:
   yarn: true
   directories:
     - node_modules
-  
-before_install:
-  
+ 
 install:
   - yarn install --frozen-lockfile
 script:
