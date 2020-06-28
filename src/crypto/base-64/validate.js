@@ -1,8 +1,4 @@
 const validate = (amount) => {
-  if (!amount) {
-    throw new TypeError('Amount is required')
-  }
-
   if (typeof amount !== 'number') {
     throw new TypeError('Amount should be a number')
   }
