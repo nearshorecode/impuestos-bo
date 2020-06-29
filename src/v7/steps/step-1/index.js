@@ -12,12 +12,13 @@ const appendVerhoeff = (number, amount) => {
 
 const stepOne = (data) => {
   const {
-    number, nitci, date, amount,
+    number, nitci, date, amount, authorization,
   } = data
 
-  if (!number || !nitci || !date || !amount) {
-    throw TypeError('number, nitci, date and amount are required for data in step 1')
+  if (!number || !nitci || !date || !amount || !authorization) {
+    throw TypeError('number, nitci, date, amount and authorization are required for data in step 1')
   }
+
   const numberVerhoeff = appendVerhoeff(number, 2)
   const nitciVerhoeff = appendVerhoeff(nitci, 2)
   const dateVerhoeff = appendVerhoeff(date, 2)
@@ -34,6 +35,7 @@ const stepOne = (data) => {
   return {
     verhoeff5: appendVerhoeff(totalSumString, 5).slice(-5),
     verhoeff2: {
+      authorization,
       number: numberVerhoeff,
       nitci: nitciVerhoeff,
       date: dateVerhoeff,
