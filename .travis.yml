@@ -1,14 +1,17 @@
 language: node_js
 node_js:
   - 10
-
 cache:
   yarn: true
   directories:
     - node_modules
- 
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/ 
 install:
   - yarn install --frozen-lockfile
 script:
   - yarn lint
   - yarn test
+after_success:
+  - test $TRAVIS_BRANCH = "master" && npm run semantic-release
