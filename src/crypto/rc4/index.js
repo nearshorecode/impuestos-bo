@@ -8,7 +8,15 @@ const pad = (num, size) => {
   return s
 }
 
-const rc4 = (message, key) => {
+const allegedRC4 = (message, key) => {
+  if (!message || !key) {
+    throw TypeError('message & key are required')
+  }
+
+  if (typeof message !== 'string' || typeof key !== 'string') {
+    throw TypeError('message & key are required')
+  }
+
   const state = []
   for (let i = 0; i < buffer; i += 1) {
     state.push(i)
@@ -35,14 +43,20 @@ const rc4 = (message, key) => {
   for (let i = 0; i < message.length; i += 1) {
     x = parseInt((x + 1) % buffer, 10)
     y = parseInt((state[x] + y) % buffer, 10)
+
+    const temp = state[x]
+    state[x] = state[y]
+    state[y] = temp
+
     const idx = state[x] + state[y]
     // eslint-disable-next-line no-bitwise
     nmen = message.charCodeAt(i) ^ state[parseInt(idx % buffer, 10)]
-    const temp = pad(base64(nmen), 2)
-    cyfered.push(temp)
+    cyfered.push(pad(base64(nmen, 16), 2))
   }
 
   return cyfered.join('-')
 }
 
-console.log(rc4('d3Ir6', 'sesamo'))
+module.exports = {
+  allegedRC4,
+}
