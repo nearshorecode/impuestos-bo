@@ -14,4 +14,4 @@ script:
   - yarn lint
   - yarn test
 after_success:
-  - test $TRAVIS_BRANCH = "master" && npm run semantic-release
+  - test $TRAVIS_BRANCH = "master" && ./node_modules/.bin/semantic-release --ci --debug
