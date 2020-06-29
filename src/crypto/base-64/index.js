@@ -12,7 +12,7 @@ const availableChars = [
 
 const BASE_64 = 64
 
-const base64 = (amount) => {
+const base64 = (amount, base = BASE_64) => {
   let safeAmount = validate(amount)
 
   let divisor = 1
@@ -21,8 +21,8 @@ const base64 = (amount) => {
   let encoded = ''
 
   while (divisor > 0) {
-    divisor = parseInt(safeAmount / BASE_64, 10)
-    module = safeAmount % BASE_64
+    divisor = parseInt(safeAmount / base, 10)
+    module = safeAmount % base
     encoded = availableChars[module] + encoded
     safeAmount = divisor
   }

@@ -1,8 +1,5 @@
-const greet = (name) => {
-  if (!name) {
-    return 'Hello'
-  }
-  return `Hello ${name}`
-}
+const { crypto } = require('./crypto')
 
-module.exports = { greet }
+module.exports = {
+  crypto,
+}
