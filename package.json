@@ -1,8 +1,14 @@
 {
   "name": "@nearshorecode/impuestos-bo",
   "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "description": "Utility library to generate V7 control code for Impuestos Bolivia",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
