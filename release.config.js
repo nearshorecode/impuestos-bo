@@ -1,5 +1,5 @@
 module.exports = {
-  npmPublish: false,
+  npmPublish: true,
   branches: [
     'master',
   ],
@@ -67,7 +67,7 @@ module.exports = {
     [
       '@semantic-release/npm',
       {
-        npmPublish: false,
+        npmPublish: true,
       },
     ],
     [
