@@ -1,5 +1,23 @@
 Impuestos Bolivia Changelog
 
+## [1.2.0](https://github.com/nearshorecode/impuestos-bo/compare/v1.1.1...v1.2.0) (2020-06-29)
+
+
+### :sparkles: Features
+
+* add step 1 of codigo de control ([898aeb8](https://github.com/nearshorecode/impuestos-bo/commit/898aeb846af1d30458921c7f0a36ccf04dad3744))
+
+
+### :bug: Bug Fixes
+
+* add step 2 ([0418b7e](https://github.com/nearshorecode/impuestos-bo/commit/0418b7ea5a7a4d5d135bd841c06c5dd374ad4ba7))
+* add step 3 ([5286b25](https://github.com/nearshorecode/impuestos-bo/commit/5286b25e4df8b771e4e1be2c943b660ec0a050d4))
+* add step 4 ([05440cf](https://github.com/nearshorecode/impuestos-bo/commit/05440cfa2c683629ad89cc26de352504d7c656c1))
+* add step 5 ([d84747c](https://github.com/nearshorecode/impuestos-bo/commit/d84747c23ab35e371b60a122ed9565fe49fb89bb))
+* add step 6 ([4d3a1e3](https://github.com/nearshorecode/impuestos-bo/commit/4d3a1e3659d182c117cf5f15e8b14e190f01d56b))
+* delete destructuring null values ([bc805b4](https://github.com/nearshorecode/impuestos-bo/commit/bc805b4e5f97d6f9f50680b8ae9b855d8516b011))
+* expand verhoeff return value ([5a0fd6a](https://github.com/nearshorecode/impuestos-bo/commit/5a0fd6a5bd399bc3886babe5e40b8cd21272b348))
+
 ### [1.1.1](https://github.com/nearshorecode/impuestos-bo/compare/v1.1.0...v1.1.1) (2020-06-29)
 
 
