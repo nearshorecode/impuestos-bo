@@ -23,6 +23,8 @@ const stepTwo = (verhoeffData = {}, dosification) => {
     nitci: verhoeff2.nitci + data[2],
     date: verhoeff2.date + data[3],
     amount: verhoeff2.amount + data[4],
+    verhoeff5,
+    verhoeff,
   }
 }
 

@@ -8,7 +8,7 @@ const pad = (num, size) => {
   return s
 }
 
-const allegedRC4 = (message, key) => {
+const allegedRC4 = (message, key, joiner = '-') => {
   if (!message || !key) {
     throw TypeError('message & key are required')
   }
@@ -54,7 +54,7 @@ const allegedRC4 = (message, key) => {
     cyfered.push(pad(base64(nmen, 16), 2))
   }
 
-  return cyfered.join('-')
+  return cyfered.join(joiner)
 }
 
 module.exports = {
