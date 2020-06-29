@@ -1,5 +1,12 @@
 Impuestos Bolivia Changelog
 
+### [1.0.3](https://github.com/nearshorecode/impuestos-bo/compare/v1.0.2...v1.0.3) (2020-06-29)
+
+
+### :wrench: Chore
+
+* update package.json details ([125b0ae](https://github.com/nearshorecode/impuestos-bo/commit/125b0aed38a5be16afd6a0219e83682d1a640041))
+
 ### [1.0.2](https://github.com/nearshorecode/impuestos-bo/compare/v1.0.1...v1.0.2) (2020-06-29)
 
 
