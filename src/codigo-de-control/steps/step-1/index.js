@@ -12,7 +12,7 @@ const appendVerhoeff = (number, amount) => {
 
 const stepOne = (data) => {
   const {
-    number = null, nitci = null, date = null, amount = null,
+    number, nitci, date, amount,
   } = data
 
   if (!number || !nitci || !date || !amount) {
