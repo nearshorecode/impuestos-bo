@@ -9,7 +9,9 @@ const stepFive = (data = {}) => {
     throw TypeError('data is required for step 5')
   }
 
-  const result = partialTotals.map((partial, idx) => parseInt((partial * total) / verhoeff[idx], 10))
+  const mapper = (partial, idx) => parseInt((partial * total) / verhoeff[idx], 10)
+
+  const result = partialTotals.map(mapper)
 
   const message = result.reduce((a, b) => a + b, 0)
 
