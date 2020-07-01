@@ -1,7 +1,7 @@
 const { verhoeff } = require('../../../crypto/verhoeff/index')
 
 const appendVerhoeff = (number, amount) => {
-  let temp = number
+  let temp = number.toString()
   let digits = amount
   while (digits > 0) {
     temp += verhoeff(temp)
