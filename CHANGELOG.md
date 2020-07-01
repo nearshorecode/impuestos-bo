@@ -1,5 +1,12 @@
 Impuestos Bolivia Changelog
 
+### [1.4.1](https://github.com/nearshorecode/impuestos-bo/compare/v1.4.0...v1.4.1) (2020-07-01)
+
+
+### :bug: Bug Fixes
+
+* add qrcode data ([47a065a](https://github.com/nearshorecode/impuestos-bo/commit/47a065af769584698e8b7ddfbe578a941e9882ef))
+
 ## [1.4.0](https://github.com/nearshorecode/impuestos-bo/compare/v1.3.0...v1.4.0) (2020-07-01)
 
 
