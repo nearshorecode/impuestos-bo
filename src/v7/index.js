@@ -11,7 +11,7 @@ const v7 = (data, dosification) => {
     authorization: data.authorization.toString(),
     number: data.number.toString(),
     nitci: data.nitci.toString(),
-    date: data.date.toString(),
+    date: data.date.toString().replace(/\//g, ''),
     amount: data.amount.toString(),
   }
   const firstStep = stepOne(safeData)
@@ -20,6 +20,41 @@ const v7 = (data, dosification) => {
   const fourthStep = stepFour(thirdStep)
   const fifthStep = stepFive(fourthStep)
   const sixthStep = stepSix(fifthStep, key)
+
+  if (data.qr) {
+    const { sellerNITCI, total, amounts } = data.qr
+
+    let ice = 0
+    let g = 0
+    let noTax = 0
+    let discounts = 0
+
+    if (amounts) {
+      ice = amounts['ice-iehd-tasas'] || 0
+      g = amounts.gravado || 0
+      noTax = amounts['no-tax'] || 0
+      discounts = amounts.discounts || 0
+    }
+
+    const qrCode = []
+    qrCode.push(sellerNITCI)
+    qrCode.push(safeData.number)
+    qrCode.push(safeData.authorization)
+    qrCode.push(safeData.date)
+    qrCode.push(total)
+    qrCode.push(safeData.amount)
+    qrCode.push(sixthStep)
+    qrCode.push(safeData.nitci)
+    qrCode.push(ice)
+    qrCode.push(g)
+    qrCode.push(noTax)
+    qrCode.push(discounts)
+
+    return {
+      controlCode: sixthStep,
+      qrCode: qrCode.join('|'),
+    }
+  }
 
   return sixthStep
 }
