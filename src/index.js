@@ -1,5 +1,5 @@
-const { crypto } = require('./crypto')
+const { v7 } = require('./v7')
 
 module.exports = {
-  crypto,
+  v7,
 }
