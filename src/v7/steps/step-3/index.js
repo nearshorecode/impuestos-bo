@@ -11,7 +11,7 @@ const stepThree = (data = {}, dosification) => {
   }
 
   const value = authorization + number + nitci + date + amount
-  const encoder = dosification + verhoeff5
+  const encoder = key + verhoeff5
 
   const encoded = allegedRC4(value, encoder, '')
 
