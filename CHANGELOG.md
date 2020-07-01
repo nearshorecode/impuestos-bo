@@ -1,5 +1,12 @@
 Impuestos Bolivia Changelog
 
+## [1.4.0](https://github.com/nearshorecode/impuestos-bo/compare/v1.3.0...v1.4.0) (2020-07-01)
+
+
+### :sparkles: Features
+
+* add husky/commitlint to repo ([57a53a6](https://github.com/nearshorecode/impuestos-bo/commit/57a53a68b2204de54ee0de8bef4d8a83dfef8b98))
+
 ## [1.3.0](https://github.com/nearshorecode/impuestos-bo/compare/v1.2.0...v1.3.0) (2020-07-01)
 
 
