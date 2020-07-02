@@ -35,6 +35,16 @@ const data = {
 const controlCode = v7(data, '9rCB7Sv4X29d)5k7N%3ab89p-3(5[A') // returns control code string
 ```
 
+You can convert a number to literal, for example:
+
+```
+const { literal } = require('@nearshorecode/impuestos-bo')
+
+const data = '17'
+
+const literal = literal(data) // returns 'DIECISIETE 00/100 BOLIVIANOS'
+```
+
 You can also request QR code string that you can later use it to render, for this you need to send it additional parameters:
 
 ```
