@@ -1,6 +1,6 @@
 {
   "name": "@nearshorecode/impuestos-bo",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Utility library to generate V7 control code for Impuestos Bolivia",
   "publishConfig": {
     "access": "public"
