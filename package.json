@@ -39,7 +39,7 @@
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
-    "semantic-release": "^16.0.4"
+    "semantic-release": "^17.2.3"
   },
   "husky": {
     "hooks": {
